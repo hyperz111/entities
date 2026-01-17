@@ -1,3 +1,10 @@
+This a temporary fork from [original `entities`](https://github.com/fb55/entities) with name `@hyperz111/entities`, with some differents:
+
+1. This is ESM-only.
+2. Need Node.js 20 or higher.
+
+If this is merged back to upstream, i will deprecated this. You can visit this [temporary branch](https://github.com/hyperz111/entities/tree/major-fork).
+
 # entities [![NPM version](https://img.shields.io/npm/v/entities.svg)](https://npmjs.org/package/entities) [![Downloads](https://img.shields.io/npm/dm/entities.svg)](https://npmjs.org/package/entities) [![Node.js CI](https://github.com/fb55/entities/actions/workflows/nodejs-test.yml/badge.svg)](https://github.com/fb55/entities/actions/workflows/nodejs-test.yml)
 
 Encode & decode HTML & XML entities with ease & speed.
