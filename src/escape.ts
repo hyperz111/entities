@@ -8,7 +8,7 @@ const xmlCodeMap = new Map([
 
 // http://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
 export function getCodePoint(input: string, index: number): number {
-    return input.codePointAt(index);
+    return input.codePointAt(index)!;
 }
 
 /**

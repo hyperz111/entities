@@ -35,7 +35,7 @@ const decodeMap = new Map([
 /**
  * Just String.fromCodePoint
  */
-export const { fromCodePoint } = String;
+export const fromCodePoint: typeof String.fromCodePoint = String.fromCodePoint;
 
 /**
  * Replace the given code point with a replacement character if it is a
