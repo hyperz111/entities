@@ -4,8 +4,6 @@
         "target": "es2019",
         "module": "nodenext",
         "declaration": true,
-        "declarationMap": true,
-        "sourceMap": true,
         "noEmit": true,
 
         /* Strict Type-Checking Options */
