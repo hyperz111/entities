@@ -38,8 +38,7 @@
     "module": "./dist/index.js",
     "types": "./dist/index.d.ts",
     "files": [
-        "dist",
-        "src"
+        "dist"
     ],
     "scripts": {
         "build:docs": "typedoc --hideGenerator src/index.ts",
