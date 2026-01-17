@@ -1,5 +1,5 @@
 {
-    "name": "entities",
+    "name": "@hyperz111/entities",
     "version": "7.0.0",
     "description": "Encode & decode XML and HTML entities with ease & speed",
     "keywords": [
@@ -94,5 +94,8 @@
             "./decode": "./src/decode.ts",
             "./escape": "./src/escape.ts"
         }
+    },
+    "publishConfig": {
+        "access": "public"
     }
 }
