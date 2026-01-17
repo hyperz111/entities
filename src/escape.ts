@@ -6,19 +6,10 @@ const xmlCodeMap = new Map([
     [62, "&gt;"],
 ]);
 
-// For compatibility with node < 4, we wrap `codePointAt`
-export const getCodePoint: (c: string, index: number) => number =
-    // eslint-disable-next-line @typescript-eslint/no-unnecessary-condition
-    String.prototype.codePointAt == null
-        ? (c: string, index: number): number =>
-              (c.charCodeAt(index) & 0xfc_00) === 0xd8_00
-                  ? (c.charCodeAt(index) - 0xd8_00) * 0x4_00 +
-                    c.charCodeAt(index + 1) -
-                    0xdc_00 +
-                    0x1_00_00
-                  : c.charCodeAt(index)
-        : // http://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
-          (input: string, index: number): number => input.codePointAt(index)!;
+// http://mathiasbynens.be/notes/javascript-encoding#surrogate-formulae
+export function getCodePoint(input: string, index: number): number {
+    return input.codePointAt(index);
+}
 
 /**
  * Bitset for ASCII characters that need to be escaped in XML.
